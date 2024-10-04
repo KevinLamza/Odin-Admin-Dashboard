@@ -10,6 +10,7 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: Roboto, sans-serif, system-ui;
 }
 
 img, picture, video, canvas, svg {
@@ -27,6 +28,17 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
     isolation: isolate;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+svg path {
+    fill: lightyellow; 
+    stroke-width: 5px;
+}
+
+svg {
+    stroke-width: 110px;
 }
 
 .container {
@@ -53,7 +65,32 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar > div {
-    background-color: lightyellow;
+    color: lightyellow;
+    font-weight: 800;
+}
+
+.sidebar img {
+    display: inline;
+    filter: invert(94%) sepia(3%) saturate(2471%) hue-rotate(17deg) brightness(115%) contrast(101%);
+}
+
+.sidebar li {
+    list-style: none;
+    font-size: 24px;
+}
+
+.sidebar ul {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.title ul {
+    font-size: 28px;
+    gap: 10px;
 }
 
 .header {
